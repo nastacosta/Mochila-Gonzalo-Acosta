@@ -1,0 +1,72 @@
+Cheatsheet Gonzalo Acosta
+
+Verificación de versión Git:
+git --version 
+
+Información sobre comandos de Git:
+git help 
+
+Realizar config de forma global:
+git config --global 
+
+Crear el repositorio:
+git init 
+
+Asignar un nombre de usuario de forma local:
+git config user.name "name"
+
+Asigna el email del usuario de forma local:
+git config user.email "email@usuario.com"
+
+Provee información sobre los estados de los archivos: 
+git status 
+
+Agregar todos los archivos:
+git add . 
+
+Agrega un archivo específico al stage: 
+git add path/to/file
+
+Commitea los cambios hechos:
+git commit -m "message of commit" 
+
+Envía los cambios al repositorio remoto:
+git push origin main
+
+Descarga los cambios que existen en el repositorio remoto:
+git pull
+
+Baja archivo específico del stage:
+git reset .nameOfTheFile
+
+Muestra todos los commits en la historia del repositorio:
+git log 
+
+Muestra de forma condenzada los últimos cambios:
+git status --short
+
+Enmenda/ corrige el mensaje del último commit:
+git commit --amend -m "corrected message"
+
+Se devuelve hacia el commit aterior(o tanto como lo indique el número)
+git reset --soft HEAD^
+(puede ser reemplazado con el hash único del commit al que se desea ir)
+git reset --soft uniqueHash
+
+Se devuelve hacia el commit anterior pero baja todos los cambios del stage(mantiene cambios actuales)
+git reset --mixed
+
+Se devuelve hacia el commit requerido, dejándo el proyecto como estaba en ese commit y borrando todo lo que haya después de ese commit: 
+git reset --hard
+
+Muestra el historial de todos los commits, como recopilación privada de los commits locales del repositorio:
+git reflog 
+
+Mueve un archivo de una carpeta a otra:
+git mv file.file 
+
+Tambié sirve para renombrar:
+git mv name.file newName.file 
+
+Elimina carpetas, archivos:
+git rm file.name
