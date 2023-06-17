@@ -1,0 +1,5 @@
+Direccion privada: inet addr:127.0.0.1
+direccion publica:  inet addr:10.
+direccion MAC: HWaddr 08:00:27:ce:91:95 
+
+Las direcciones IP son distintas, las privadas son utilizadas dentro de una red local para identificar y comunicarse con dispositivos internos, mientras que las direcciones ip publicas son asignadas a redes externas para permitir laacion en internet y la identificacion unica de esos dispositivos a nivel mundial.
